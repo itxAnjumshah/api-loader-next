@@ -26,7 +26,7 @@ useEffect(()=>{
 
   return (
     <>
-<h1>here  is  loading  api data </h1>    
+<h1>here  is  loading  with client  side api data </h1>    
 {
    loading ? <Loader/> :(
     users.map((user,i) =>(
