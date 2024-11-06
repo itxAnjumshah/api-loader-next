@@ -6,6 +6,8 @@ export default function Home() {
   return (
   <>
 <Link href="/api-loader-client"> go to loader-link</Link>
+<br/>
+<Link href="/SSG">Ssg generation </Link>
     
   </>
   );
