@@ -20,4 +20,11 @@ const  Userid = async(props) => {
   )
 }
 
-export default  Userid
+export default  Userid;
+
+export const generateStaticParams = async () => {
+    const data = await Getdata();
+    return data.map(user => ({
+        id: user.id.toString()
+    }));
+}
