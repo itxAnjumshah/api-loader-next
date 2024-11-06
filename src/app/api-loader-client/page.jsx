@@ -26,13 +26,24 @@ useEffect(()=>{
 
   return (
     <>
-<h1>here  is  loading  with client  side api data </h1>    
+<h1>here  is  loading  with client  side api data </h1>  
+<table>
+  <tbody>
+    <tr>
+      <th>name</th>
+      <th>email</th>
+     
+     
+    </tr>
+  </tbody>
+  </table>  
 {
    loading ? <Loader/> :(
     users.map((user,i) =>(
-      <h3 key={i}>
-        name: {user.username}
-      </h3>
+      <tr key={i}>
+        <td>name:{user.name}</td>
+       <td>email:{user.email}</td>
+      </tr>
     ))
    )
 }
